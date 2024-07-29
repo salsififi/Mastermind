@@ -47,9 +47,3 @@ class Game:
                 if self.attempt_number > MAX_NB_OF_ATTEMPTS:
                     self.end = True
                     print(LOSE_MESAGE.format(MAX_NB_OF_ATTEMPTS, self.secret_combo, self.secret_combo.combo))
-
-
-if __name__ == '__main__':
-    for _ in range(10):
-        g = Game()
-        print(g.secret_combo)
